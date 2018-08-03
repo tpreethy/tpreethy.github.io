@@ -10,26 +10,25 @@
 </head>
 <body>
 	
-	<div class="content-container">	
-			
+	<div class="content-container">			
 			<!-- NAV -->
+			
 			<header class="shadow">
-				<div id="logo"><p class="logo-text">Preethi Thippaluru</p></div>
-				<nav>
+				
+				<nav class="topnav" id="myTopnav">
 				    <ul>
 				    	<li><a href="#home">Home</a></li>
 						<li><a href="#profile">Profile</a></li>
 				        <li><a href="#portfolio">Portfolio</a></li>
-				        <li><a href="#contact">Contact</a></li>
-				    </ul>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
 				</nav>
-			</header>
-
+			</header> 
 			
 			<!-- HOME PAGE -->
 			<section class="page clear-it" id="home"><a id="home"></a>
 					<div class="circle">
-				    	<h1 class="circle-text">I am Preethi.<br />I am an Application Developer.</h1>
+				    	<h1 class="circle-text">Preethi<br />Thippaluru</h1>
 						<!-- v DOWN ARROW v -->
 						<p class="center-text"><a href="#profile"><img class="down-arrow" src="img/down-arrow.svg" width="40" height="40" /></a></p>
 					</div>
@@ -65,11 +64,75 @@
 				<!-- END TITLE -->
 				
 				<!-- PORTFOLIO CONTENT -->
+				<div class="grid">
+				  <figure>	
+					<div class="grid-image">
+						<img src="img/gallery1.png" height="300" width="600"/>
+						
+					</div>
+					<figcaption>
+						<p>Simple Photo Gallery app built using Angular 5, Bootstrap.Used Angular CLI and custom Pipe to build filterable photo gallery</p>
+					</figcaption>	
+					
+				  </figure>
+					
+					<div class="grid-hover">
+						<div class="options-container">
+							<ul class="code-or-web">
+								<li>
+									<a href="https://github.com/tpreethy/gallery" target="_blank">
+										<img src="img/github-white-64.png" />
+									</a>
+								</li>
+								<li>
+									<a href="http://tpreethy.github.io/gallery/" target="_blank">
+										<img src="img/chrome-white-64.png" />
+									</a>
+								</li>
+							</ul>
+						</div><!-- Ends div options-container -->
+					</div><!-- Ends div grid-hover -->
+				 	
+				</div><!-- Ends div grid -->
+
+				    <div class="grid">
+					  <figure>
+						<div class="grid-image">
+							<img src="img/flappy.png" height="300" width="600"/>
+						</div>
+						<figcaption>
+						  <p>Simple Flappy bird game built with HTML5, pure javascript using draw for writing images in canvas </p>
+						</figcaption>
+					  </figure>	
+						
+						<div class="grid-hover">
+							<div class="options-container">
+								<ul class="code-or-web">
+									<li>
+										<a href="https://github.com/tpreethy/Flappy-Bird" target="_blank">
+											<img src="img/github-white-64.png" />
+										</a>
+									</li>
+									<li>
+										<a href="http://tpreethy.github.io/Flappy-Bird/" target="_blank">
+											<img src="img/chrome-white-64.png" />
+										</a>
+									</li>
+								</ul>
+							</div><!-- Ends div options-container -->
+						</div><!-- Ends div grid-hover -->
+					</div><!-- Ends div grid -->
+
 				
 					<div class="grid">
+					 <figure>
 						<div class="grid-image">
-							<img src="img/hot_cold.png" height="300"/>
+							<img src="img/hot_cold.png" height="300" width="600"/>
 						</div>
+						<figcaption>
+							<p>Hot or Cold number guessing name built with pure javascript</p>
+						</figcaption>
+					  </figure>	
 						
 						<div class="grid-hover">
 							<div class="options-container">
@@ -91,9 +154,14 @@
 
 
 					<div class="grid">
+					  <figure>
 						<div class="grid-image">
-							<img src="img/shopping-list.png" height="300"/>
+							<img src="img/shopping-list.png" height="300" width="600"/>
 						</div>
+						<figcaption>
+							<p>Shopping List app built with javascript</p>
+						</figcaption>
+					   </figure>
 						
 						<div class="grid-hover">
 							<div class="options-container">
@@ -115,9 +183,14 @@
 
 
 					<div class="grid">
+					  <figure>
 						<div class="grid-image">
-							<img src="img/weather-app.png" height="300"/>
+							<img src="img/weather-app.png" height="300" width="600"/>
 						</div>
+						<figcaption>
+							<p>Finding Weather app based on location.Used weather API to retrieve the weather</p>
+						</figcaption>
+					  </figure>
 						
 						<div class="grid-hover">
 							<div class="options-container">
@@ -181,5 +254,6 @@
 	<!-- jQuery -->
 	<script type="text/javascript" src="scripts/jquery-1.10.1.min.js"></script>
 	<script type="text/javascript" src="scripts/app.js"></script>
+	
 </body>
 </html>

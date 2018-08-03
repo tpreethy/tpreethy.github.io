@@ -67,7 +67,6 @@ table {
 /* End CSS RESET */
 
 
-
 /**  MOBILE LAYOUT  (portrait and landscape) **/
 @media only screen and (min-width : 320px) {
 
@@ -78,9 +77,44 @@ table {
 		font-size: 100%;
 	}
 
-	header {
-		display: none;
+    header {
+		background-color: #fff;
+		display: block;
+		font-family: 'Roboto Slab','nevis', helvetica, tahoma, arial, sans-serif;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 50px;
+		width: 100%;
+		z-index: 1;
 	}
+	
+	nav {
+		display: block;
+		float: right;	
+		font-size: 81%; /* 13px/16px = 82% */
+		line-height: 50px;
+		text-align: center;
+		width: 100%;
+	}
+
+	nav li {
+		display: inline;
+		padding: 0;
+		
+	}
+
+	nav ul li a {
+		color: #555;
+		padding: 10px;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	.topnav li a {
+		display: inline;
+	}
+
 
 	h1 {
 		color: #555;
@@ -172,6 +206,18 @@ table {
 	}
 		
 
+	figure {
+		display: table;
+	  }
+	  
+	  figcaption {
+		display: table-caption;
+		caption-side: bottom;
+		text-align:center;
+		background-color: black;
+		color:white;
+	  }
+
 
 
 	/**  M-THEME  **/
@@ -194,7 +240,7 @@ table {
 	}
 
 	.circle-text {
-		color: #333;
+		color: #f4594e;
 		font-family:  'Roboto Slab',helvetica, tahoma, arial, sans-serif;
 		line-height: 150%;
 		padding-top: 75px;
@@ -352,16 +398,16 @@ table {
 	nav {
 		display: block;
 		float: right;	
-		font-size: 82%; /* 13px/16px = 82% */
+		font-size: 95%; /* 13px/16px = 82% */
 		line-height: 50px;
-		text-align: right;
-		width: 70%;
+		text-align: center;
+		width: 100%;
 	}
 
 	nav li {
 		display: inline;
 		padding: 0;
-		width: 100%;
+		
 	}
 
 	
@@ -405,3 +451,15 @@ table {
 		max-width: 25%;
 	}
 }
+
+
+@media screen and (max-width: 600px) {
+
+  .topnav li a{
+	  display:inline;
+  }	
+}
+
+  .topnav .icon{
+	  display:none;
+  }
